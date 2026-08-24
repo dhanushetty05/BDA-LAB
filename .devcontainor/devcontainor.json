@@ -1,0 +1,15 @@
+{
+  "name":"Hadoop & Big Data Lab",
+  "image":"mcr.microsoft.com/devcontainors/universal:latest",
+  "feature":{
+    "ghcr.io/devcontainors/features/docker-in-docker:2"{},
+    "ghcr.io/devcontainors/features/java:1": {
+      "version":"11"
+    },
+    "ghcr.io/devcontainors/features/python:1":{
+      "version":"3.10"
+    }
+  },
+  "postCreateCommand":"sudo apt-get update && sudo apt-get install -y mongodb-mongosh && pip install pyspark"
+    
+      
